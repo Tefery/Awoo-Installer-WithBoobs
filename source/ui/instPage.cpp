@@ -14,7 +14,7 @@ namespace inst::ui {
         else this->SetBackgroundImage("romfs:/images/background.jpg");
         this->topRect = Rectangle::New(0, 0, 1280, 94, COLOR("#170909FF"));
         this->infoRect = Rectangle::New(0, 95, 1280, 60, COLOR("#17090980"));
-        if (inst::config::gayMode) {
+        if (inst::config::removeAnime) {
             this->titleImage = Image::New(-113, 0, "romfs:/images/logo.png");
             this->appVersionText = TextBlock::New(367, 49, "v" + inst::config::appVersion, 22);
         }
@@ -39,7 +39,7 @@ namespace inst::ui {
         this->Add(this->installInfoText);
         this->Add(this->installBar);
         this->Add(this->awooImage);
-        if (inst::config::gayMode) this->awooImage->SetVisible(false);
+        if (inst::config::removeAnime) this->awooImage->SetVisible(false);
     }
 
     void instPage::setTopInstInfoText(std::string ourText){
@@ -67,7 +67,7 @@ namespace inst::ui {
         mainApp->instpage->installInfoText->SetText("");
         mainApp->instpage->installBar->SetProgress(0);
         mainApp->instpage->installBar->SetVisible(false);
-        mainApp->instpage->awooImage->SetVisible(!inst::config::gayMode);
+        mainApp->instpage->awooImage->SetVisible(!inst::config::removeAnime);
         mainApp->LoadLayout(mainApp->instpage);
         mainApp->CallForRender();
     }

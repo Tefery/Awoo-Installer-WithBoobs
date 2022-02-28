@@ -108,13 +108,7 @@
             "error": "Le NCA demandé n'est pas correctement signé: "
         },
         "finished": [
-            "Profitez bien de vos \"backups légaux\"!",
-            "Je suis sûr qu'après avoir essayé le jeu, vous prendrez beaucoup de plaisir à l'acheter !",
-            "Vous achetez vos jeux ? Nintendo-san vous remercie de votre achat!",
-            "Contourner les DRM, c'est génial, non ?",
-            "Vous avez probablement sauvé genre six arbres en n'achetant pas le jeu ! Tout ce plastique va bien quelque part !",
-            "Des ninjas Nintendo ont été envoyés à votre emplacement actuel.",
-            "Et nous n'avons même pas eu à vous enfoncer une idéologie politique dans le crâne pour en arriver là !"
+            ""
         ]
     },
     "sig": {
@@ -147,7 +141,7 @@
             "boost_mode": "Activer le  \"boost mode\" pendant l'installation",
             "ask_delete": "Demande de suppression des fichiers originaux après l'installation",
             "auto_update": "Vérifier les mises à jour de l'installateur Awoo automatiquement",
-            "gay_option": "Enlever la catgirl dans le menu",
+            "remove_anime": "Enlever la catgirl dans le menu",
             "sig_url": "Sigpatches URL: ",
             "language": "Langage: ",
             "check_update": "Vérifiez les mises à jour de l'installateur Awoo",

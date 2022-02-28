@@ -108,13 +108,7 @@
             "error": "Il file NCA seguente non è firmato correttamente: "
         },
         "finished": [
-            "Goditi i tuoi \"backup legali\"!",
-            "Sono sicuro che dopo che lo proverai, ti divertirai tantissimo a comprarlo!",
-            "Hai comprato il giochino, vero? Nintendo-san ti linglazia pel il tuo acquisto!",
-            "Bypassare il DRM è fantastico, vero?",
-            "Probabilmente hai salvato sei alberi non comprando il gioco! Tutta quella plastica va da qualche parte!",
-            "I ninja di Nintendo sono stati mandati alla tua attuale posizione.",
-            "E non abbiamo nemmeno dovuto farti mandare giù un'ideologia politica per farti arrivare qui!"
+            ""
         ]
     },
     "sig": {
@@ -147,7 +141,7 @@
             "boost_mode": "Abilita la \"boost mode\" durante le installazioni",
             "ask_delete": "Chiedi di cancellare i file originale dopo l'installazione",
             "auto_update": "Controlla aggiornamenti di Awoo Installer automaticamente",
-            "gay_option": "Rimuovi anime",
+            "remove_anime": "Rimuovi anime",
             "sig_url": "Fonte URL SigPatches: ",
             "language": "Lingua: ",
             "check_update": "Controlla aggiornamenti di Awoo Installer ora",

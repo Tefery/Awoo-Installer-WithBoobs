@@ -108,13 +108,7 @@
             "error": "Die gewünschte NCA ist nicht richtig signiert: "
         },
         "finished": [
-            "Genieße deine \"legalen Sicherheitskopien\"!",
-            "Ich bin mir sicher nachdem du das Spiel probiert hast wirst du Spaß dabei haben das Spiel tatsächlich zu kaufen!",
-            "Du hast das Spiel sicher gekauft? Nintendo sagt danke für deinen Kauf!",
-            "DRM zu umgehen ist toll, stimmt es?",
-            "Du hast wahrscheinlich sechs Bäume gerettet. Dadurch dass du das Spiel nicht gekauft hast!\nAll das Plastik geht irgendwo hin!",
-            "Nintendo Ninjas wurden zu deinem Standort gesendet.",
-            "Und wir mussten dir nicht mal politische Ideologien in den Rachen stopfen!"
+            ""
         ]
     },
     "sig": {
@@ -147,7 +141,7 @@
             "boost_mode": "Aktiviere \"Boost-Modus\" während der Installation",
             "ask_delete": "Frage ob installierte Titel gelöscht werden sollen",
             "auto_update": "Suche automatisch nach Updates für Awoo Installer",
-            "gay_option": "Entferne Anime",
+            "remove_anime": "Entferne Anime",
             "sig_url": "Signatur Patches URL: ",
             "language": "Sprache: ",
             "check_update": "Suche nach Updates für Awoo Installer",

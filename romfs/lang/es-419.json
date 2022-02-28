@@ -108,13 +108,7 @@
             "error": "El archivo NCA solicitado no está firmado correctamente:"
         },
         "finished": [
-            "¡Disfruta de tus «copias legales»!",
-            "¡Estoy completemente seguro de que después de probar el juego te lo pasarás muy bien comprándolo de verdad!",
-            "¿Tu compras juego verdad? ¡Nintendo-san agradece tu compra!",
-            "Saltarse el DRM es genial, ¿no?",
-            "¡Probablemente hayas salvado como seis árboles por no comprar el juego! ¡Todo ese plástico va a alguna parte!",
-            "Los ninjas de Nintendo han sido enviados a tu ubicación actual.",
-            "¡Y ni siquiera hemos tenido que meterte una ideología política en la cabeza para llegar aquí!"
+            ""
         ]
     },
     "sig": {
@@ -147,7 +141,7 @@
             "boost_mode": "Habilitar el «modo Turbo» durante las instalaciones",
             "ask_delete": "Preguntar si borrar los archivos originales, luego de una instalación satisfactoria",
             "auto_update": "Buscar actualizaciones de Awoo Installer automaticamente",
-            "gay_option": "Eliminar ánime",
+            "remove_anime": "Eliminar ánime",
             "sig_url": "URL para la instalación de sigpatches: ",
             "language": "Idioma: ",
             "check_update": "Buscar actualizaciones de Awoo Installer",

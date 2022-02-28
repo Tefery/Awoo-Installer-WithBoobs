@@ -25,7 +25,7 @@ namespace inst::ui {
         this->topRect = Rectangle::New(0, 0, 1280, 94, COLOR("#170909FF"));
         this->infoRect = Rectangle::New(0, 95, 1280, 60, COLOR("#17090980"));
         this->botRect = Rectangle::New(0, 660, 1280, 60, COLOR("#17090980"));
-        if (inst::config::gayMode) {
+        if (inst::config::removeAnime) {
             this->titleImage = Image::New(-113, 0, "romfs:/images/logo.png");
             this->appVersionText = TextBlock::New(367, 49, "v" + inst::config::appVersion, 22);
         }
@@ -132,10 +132,10 @@ namespace inst::ui {
         autoUpdateOption->SetColor(COLOR("#FFFFFFFF"));
         autoUpdateOption->SetIcon(this->getMenuOptionIcon(inst::config::autoUpdate));
         this->menu->AddItem(autoUpdateOption);
-        auto gayModeOption = pu::ui::elm::MenuItem::New("options.menu_items.gay_option"_lang);
-        gayModeOption->SetColor(COLOR("#FFFFFFFF"));
-        gayModeOption->SetIcon(this->getMenuOptionIcon(inst::config::gayMode));
-        this->menu->AddItem(gayModeOption);
+        auto removeAnimeOption = pu::ui::elm::MenuItem::New("options.menu_items.remove_anime"_lang);
+        removeAnimeOption->SetColor(COLOR("#FFFFFFFF"));
+        removeAnimeOption->SetIcon(this->getMenuOptionIcon(inst::config::removeAnime));
+        this->menu->AddItem(removeAnimeOption);
         auto sigPatchesUrlOption = pu::ui::elm::MenuItem::New("options.menu_items.sig_url"_lang + inst::util::shortenString(inst::config::sigPatchesUrl, 42, false));
         sigPatchesUrlOption->SetColor(COLOR("#FFFFFFFF"));
         this->menu->AddItem(sigPatchesUrlOption);
@@ -188,8 +188,8 @@ namespace inst::ui {
                     this->setMenuText();
                     break;
                 case 5:
-                    if (inst::config::gayMode) {
-                        inst::config::gayMode = false;
+                    if (inst::config::removeAnime) {
+                        inst::config::removeAnime = false;
                         mainApp->mainPage->awooImage->SetVisible(true);
                         mainApp->instpage->awooImage->SetVisible(true);
                         mainApp->instpage->titleImage->SetX(0);
@@ -206,7 +206,7 @@ namespace inst::ui {
                         mainApp->usbinstPage->appVersionText->SetX(480);
                     }
                     else {
-                        inst::config::gayMode = true;
+                        inst::config::removeAnime = true;
                         mainApp->mainPage->awooImage->SetVisible(false);
                         mainApp->instpage->awooImage->SetVisible(false);
                         mainApp->instpage->titleImage->SetX(-113);
