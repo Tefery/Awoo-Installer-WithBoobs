@@ -74,6 +74,8 @@ namespace inst::ui {
         this->exitMenuItem->SetIcon("romfs:/images/icons/exit-run.png");
         if (std::filesystem::exists(inst::config::appDir + "/awoo_main.png")) this->awooImage = Image::New(410, 190, inst::config::appDir + "/awoo_main.png");
         else this->awooImage = Image::New(410, 190, "romfs:/images/awoos/5bbdbcf9a5625cd307c9e9bc360d78bd.png");
+        if (std::filesystem::exists(inst::config::appDir + "/awoo_alter.png")) this->boobsImage = Image::New(410, 190, inst::config::appDir + "/awoo_alter.png");
+        else this->boobsImage = Image::New(410, 190, "romfs:/images/awoos/7d8a05boobiesda4901b20d2698d5a71.png");
         this->Add(this->topRect);
         this->Add(this->botRect);
         this->Add(this->titleImage);
@@ -87,7 +89,9 @@ namespace inst::ui {
         this->optionMenu->AddItem(this->exitMenuItem);
         this->Add(this->optionMenu);
         this->Add(this->awooImage);
+        this->Add(this->boobsImage);
         this->awooImage->SetVisible(!inst::config::removeAnime);
+        this->boobsImage->SetVisible(false);
         this->AddThread(mainMenuThread);
     }
 
@@ -158,5 +162,15 @@ namespace inst::ui {
                     break;
             }
         }
+		if (!inst::config::removeAnime) {
+			if (Down & HidNpadButton_X) {
+				this->awooImage->SetVisible(false);
+				this->boobsImage->SetVisible(true);
+			}
+			if (Up & HidNpadButton_X) {
+				this->boobsImage->SetVisible(false);
+				this->awooImage->SetVisible(true);
+			}
+		}
     }
 }
