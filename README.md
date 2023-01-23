@@ -1,4 +1,4 @@
-# Awoo Installer
+# Awoo Installer HAPPY EDITION
 A No-Bullshit NSP, NSZ, XCI, and XCZ Installer for Nintendo Switch
 
 ![Awoo Installer Main Menu](https://i.imgur.com/q5Qff0R.jpg)
