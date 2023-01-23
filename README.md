@@ -3,7 +3,7 @@ A No-Bullshit NSP, NSZ, XCI, and XCZ Installer for Nintendo Switch
 
 ![Awoo Installer Main Menu](https://i.imgur.com/q5Qff0R.jpg)
 
-## NEW FEATURES
+## HAPPY EDITION NEW FEATURES
 - Now with happiness result when pressing X
 - You can choose the main image by copying it to sdmc:\switch\Awoo-Installer\awoo_main.png
 - You can choose the alternate image by copying it to sdmc:\switch\Awoo-Installer\awoo_alter.png
